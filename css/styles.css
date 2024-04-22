@@ -1,10 +1,64 @@
+/* =========common styles============ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   color: #434455;
   background: #fff;
 }
 
+.container {
+  max-width: 1158;
+  padding-left: 15;
+  padding-right: 15;
+  margin-left: auto;
+  margin-right: auto;
+}
+.section-paddings {
+  padding-top: 120;
+  padding-bottom: 120;
+}
+
 /* ========HEADER STYLES========= */
+.page-header {
+  border-bottom: 1px solid #e7e9fc;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+}
+.menu {
+  display: flex;
+}
+.page-nav {
+  display: flex;
+  align-items: center;
+}
 .page-logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -13,6 +67,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  margin-right: 76px;
 }
 .text-color {
   color: #2e2f42;
@@ -23,6 +78,11 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  padding: 24px 0;
+  display: block;
+}
+.menu-item:not(:last-child) {
+  margin-right: 40px;
 }
 .menu-link:hover,
 .menu-link:focus {
@@ -30,7 +90,13 @@ body {
 }
 .contact-block {
   font-style: normal;
+  margin-left: auto;
 }
+.contact-list {
+  display: flex;
+  gap: 40px;
+}
+
 .contact-list-link {
   font-size: 16px;
   line-height: 1.5;
@@ -44,7 +110,14 @@ body {
 
 /* =========HERO STYLES======= */
 .hero {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1440px;
   background: #2e2f42;
+}
+.hero-container {
+  padding-top: 188px;
+  padding-bottom: 292px;
 }
 .main-title {
   font-size: 56px;
@@ -80,7 +153,15 @@ body {
   letter-spacing: 0.02em;
 }
 /* <!-- ===Our Team === --> */
+.ourteam-list {
+  display: flex;
+  column-gap: 88px;
+}
+
 .ourteam-list-item {
+  border-radius: 0 0 4px 4px;
+  padding: 0px 0px 32px 0px;
+  width: calc((100% - 72px) / 3);
   background: #ffffff;
 }
 .ourteam {
@@ -152,15 +233,4 @@ body {
 }
 .text-color-logo {
   color: #f4f4fd;
-}
-
-ul,
-ol {
-  list-style-type: none;
-}
-a {
-  text-decoration: none;
-}
-button {
-  cursor: pointer;
 }
