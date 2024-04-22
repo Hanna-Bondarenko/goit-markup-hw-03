@@ -33,15 +33,15 @@ body {
 }
 
 .container {
-  max-width: 1158;
-  padding-left: 15;
-  padding-right: 15;
+  max-width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 }
 .section-paddings {
-  padding-top: 120;
-  padding-bottom: 120;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 /* ========HEADER STYLES========= */
@@ -110,16 +110,15 @@ body {
 
 /* =========HERO STYLES======= */
 .hero {
+  padding: 188px 0 188px;
   margin-left: auto;
   margin-right: auto;
   max-width: 1440px;
   background: #2e2f42;
 }
-.hero-container {
-  padding-top: 188px;
-  padding-bottom: 292px;
-}
+
 .main-title {
+  max-width: 496px;
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
